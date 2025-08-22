@@ -2,11 +2,13 @@
 
 using namespace std;
 
-// struct Node{
-//     int data;
-//     Node* next;
-// };
+struct Node{
+    int data;
+    struct Node* next;
 
+}*head = NULL;
+
+void create(int A[], )
 int main() {
 
     cout<<"Hello World!"<<endl;
