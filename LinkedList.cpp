@@ -24,19 +24,18 @@ void create(int A[], int n) {
     }
 
 }
-void Print_LL(struct Node* head) {
-    Node* curr = head;
-    while(curr != nullptr) {
-        cout<<curr->data<<endl;
-        curr = curr->next;
-    }
+
+void Print_rec(struct Node* head) {
+
+    cout<<head->data<<" ";
+    Print_rec(head->next);
 }
 int main() {
 
     int A[] = {23,56,43,87,99,12,8};
     int n = sizeof(A)/sizeof(int);
     create(A, n);
-    Print_LL(head);
+    Print_rec(head);
     cout<<"Hello World!"<<endl;
     
     return 0;
