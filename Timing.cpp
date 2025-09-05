@@ -3,17 +3,32 @@
 #include <thread>
 using namespace std;
 
+class Timer{
+public:
+    std::chrono::time_point<std::chrono::steady_clock> start, end;
+    std::chrono::duration<float> duration;
+    Timer() {
+         start = std::chrono::steady_clock::now();
+    }
+    ~Timer() {
+         end = std::chrono::steady_clock::now();
+        duration = end - start;
+        float ms = duration.count() * 1000.0f;
+        cout<<"Timer took: "<<ms<<"ms"<<endl;
+    }
+};
+
+void function() {
+    Timer timer;
+    for(int i=0; i<100; i++) {
+        cout<<"Helloo!!\n";
+    }
+
+}
+
 int main() {
 
-    using namespace std::literals::chrono_literals;
-    auto start = std::chrono::high_resolution_clock::now();
-
-    std::this_thread::sleep_for(2s);
-
-    auto end = std::chrono::high_resolution_clock::now();
-
-    std::chrono::duration<float> duration = end - start;
-    cout<<"Duration: "<<duration.count()<<"s"<<endl;
+    function();
 
     std::cin.get();
 }
