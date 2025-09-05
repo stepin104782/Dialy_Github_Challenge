@@ -1,19 +1,15 @@
 {
-    "configurations": [
-        {
-            "name": "MinGW32",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "C:/MinGW/include",
-                "C:/MinGW/lib/gcc/mingw32/6.3.0/include",
-                "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++",
-                "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32"
-            ],
-            "compilerPath": "C:/MinGW/bin/g++.exe",
-            "intelliSenseMode": "windows-gcc-x86",
-            "cppStandard": "c++14",
-            "cStandard": "c11"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "windows-cygwin-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "D:/softwares/cygwin/bin/gcc.exe",
+      "intelliSenseMode": "linux-gcc-x64",
+      "cppStandard": "${default}",
+      "cStandard": "${default}"
+    }
+  ],
+  "version": 4
 }
