@@ -3,10 +3,6 @@
 
 using namespace std;
 
-void PrintValues(int values) {
-    cout<<"values: "<<values<<endl;
-}
-
 void ForEach(const vector<int>& values, void(* func)(int)) {
     for(int value : values)
         func(value);
@@ -14,9 +10,7 @@ void ForEach(const vector<int>& values, void(* func)(int)) {
 int main() {
 
     std::vector<int> v = {1,5,3,2,4};
-    ForEach(v, PrintValues);
-
-
+    ForEach(v, [](int values) {cout<<"values: "<<values<<endl;});
 
     std::cin.get();
 }
