@@ -1,15 +1,18 @@
 {
-  "configurations": [
-    {
-      "name": "windows-cygwin-gcc-x64",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "compilerPath": "D:/softwares/cygwin/bin/gcc.exe",
-      "intelliSenseMode": "linux-gcc-x64",
-      "cppStandard": "${default}",
-      "cStandard": "${default}"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "windows-cygwin-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/softwares/cygwin/usr/include/c++",
+                "D:/softwares/cygwin/usr/include/x86_64-pc-cygwin/c++",
+                "D:/softwares/cygwin/usr/include"
+            ],
+            "compilerPath": "D:/softwares/cygwin/bin/gcc.exe",
+            "intelliSenseMode": "windows-gcc-x64",
+            "cppStandard": "${default}",
+            "cStandard": "${default}"
+        }
+    ],
+    "version": 4
 }
